@@ -67,7 +67,7 @@ const base = (options = {}) => {
 
 
 const parse = (nzip, data, callback) => {
-  const array = data[nzip];
+  let array = data[nzip];
   // Opera バグ対策：0x00800000 を超える添字は +0xff000000 されてしまう
   const opera = (nzip - 0 + 0xff000000) + "";
   if (!array && data[opera] ) { array = data[opera]; }
