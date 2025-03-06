@@ -3,6 +3,7 @@
   "version": "0.2.9",
   "description": "Japan postal code library",
   "main": "index.js",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/othree/japan-postal-code-oasis"
